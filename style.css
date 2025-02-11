@@ -179,7 +179,7 @@ main img {
 
 .titulo{
   
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     position: absolute;
     font-weight: bold;
     
@@ -187,7 +187,7 @@ main img {
    
 }
 .feliz{
-    left: 33%;
+    left: 40%;
     top: -30%;
     color: white;
     
@@ -195,7 +195,7 @@ main img {
 
 .amor{
     
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   
    
     top: 100%;
