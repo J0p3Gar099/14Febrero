@@ -84,6 +84,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 main img {
     animation: heartbeat 3.5s infinite ease-in-out;
@@ -177,8 +178,8 @@ main img {
 }
 
 .titulo{
-    width: 200px;
-    font-size: 3.7rem;
+  
+    font-size: 2.5rem;
     position: absolute;
     font-weight: bold;
     
@@ -186,17 +187,18 @@ main img {
    
 }
 .feliz{
-    left: 27%;
+    left: 33%;
+    top: -30%;
     color: white;
-    top: 25%;
+    
 }
 
 .amor{
-    left: 5%;
-    font-size: 3rem;
-    width: 400px;
+    
+    font-size: 2.5rem;
+  
    
-    top: 67%;
+    top: 100%;
 }
 
 .texto{
