@@ -48,8 +48,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1s ease-in-out;
     display: flex;
+    padding: 0 15px;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+}
+.fecha{
+    width: 100%;
+    text-align: start;
 }
 
 
@@ -88,7 +94,7 @@ main{
     position: relative;
 }
 main img {
-    animation: heartbeat 3.5s infinite ease-in-out;
+    animation: heartbeat 4s infinite ease-in-out;
 }
 
 
@@ -214,4 +220,64 @@ main img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1s ease-out;
     background-color: white;
+}
+
+.heart {
+    height: 40px;
+    width: 40px;
+    background-color: #f20044;
+    position: relative;
+    top: 20%;
+   
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.8s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;  
+    font-size: 12px; 
+    text-align: center;
+    padding: 10px;
+}
+
+.heart p {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    transform: rotate(45deg) translate(0,-50px);
+}
+
+@keyframes  heart {
+    0% {
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100% {
+        transform: rotate(-45deg) scale(0.8);
+    }
+}
+
+.heart::before {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #f20044;
+    top: -50%;
+    border-radius: 100px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+
+.heart::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: #f20044;
+    right: -50%;
+    border-radius: 100px;
+    box-shadow: 10px 10px 90px #f20044;
 }
