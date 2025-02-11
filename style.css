@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    perspective: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 90%;
+    border-left: solid 4px black;
+    position: absolute;
+    backface-visibility: hidden;
+    z-index: 2;
+    font-family: "Love Ya Like A Sister", serif;
+    height: 85%;
+    background-color: #fa3b55;
+    border-radius: 10px;
+    transform-origin: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 1s  ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cardback{
+    width: 90%;
+    z-index: 1;
+    backface-visibility: hidden;
+    position: absolute;
+    transform: rotateY(-180deg); /* Oculta la parte trasera */
+    font-family: "Love Ya Like A Sister", serif;
+    height: 85%;
+    background-color: #ff8f9e;
+    border-radius: 10px;
+    transform-origin: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.contenedor.flip .card {
+    transform: rotateY(-180deg);
+}
+
+.contenedor.flip .cardback {
+    transform: rotateY(0);
+}
+header, main, footer{
+    width: 100%;
+    height: 30%;
+   
+}
+ header, footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+ }
+
+ footer{
+    align-items: end;
+ }
+header img, footer img {
+    width: 20%;
+    height: 20%;
+  
+ 
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main img {
+    animation: heartbeat 3.5s infinite ease-in-out;
+}
+
+
+main img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+@keyframes confetti-slow {
+    0%{
+        transform: translate3d(0,0,0) rotateX(0) rotateY(0);
+    }
+    100%{
+        transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+    }
+}
+
+@keyframes confetti-medium {
+    0%{
+        transform: translate3d(0,0,0) rotateX(0) rotateY(0);
+    }
+    100%{
+        transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+}
+
+@keyframes confetti-fast {
+    0%{
+        transform: translate3d(0,0,0) rotateX(0) rotateY(0);
+    }
+    100%{
+        transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+}
+
+.container{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
+   
+}
+
+.confetti-container{
+    perspective: 700px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.confetti{
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    border-radius: 0%;
+}
+
+.confetti--animation-slow{
+    animation: confetti-slow 2.5s linear 1 forwards;
+}
+
+.confetti--animation-medium{
+    animation: confetti-medium 1.75s linear 1 forwards;
+}
+
+.confetti--animation-fast{
+    animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+.titulo{
+    width: 200px;
+    font-size: 3.7rem;
+    position: absolute;
+    font-weight: bold;
+    
+    color: white;
+   
+}
+.feliz{
+    left: 27%;
+    color: white;
+    top: 25%;
+}
+
+.amor{
+    left: 5%;
+    font-size: 3rem;
+    width: 400px;
+   
+    top: 67%;
+}
+
+.texto{
+    font-size: 1.9rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 79%;
+    transform-origin: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease-out;
+    background-color: white;
+}
