@@ -37,11 +37,12 @@
     width: 90%;
     z-index: 1;
     backface-visibility: hidden;
+    border-left: solid 4px #fa3b55;
     position: absolute;
     transform: rotateY(-180deg); /* Oculta la parte trasera */
     font-family: "Love Ya Like A Sister", serif;
     height: 85%;
-    background-color: #ff8f9e;
+    background-color: #ffffff;
     border-radius: 10px;
     transform-origin: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -53,7 +54,7 @@
 
 
 .contenedor.flip .card {
-    transform: rotateY(-180deg);
+    transform: rotateY(-90deg);
 }
 
 .contenedor.flip .cardback {
@@ -208,7 +209,7 @@ main img {
     color: black;
     position: absolute;
     top: 100%;
-    left: 79%;
+    left: 75%;
     transform-origin: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 1s ease-out;
