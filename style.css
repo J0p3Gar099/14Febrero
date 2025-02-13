@@ -211,8 +211,10 @@ main img {
 .texto{
     font-size: 1.9rem;
     font-weight: bold;
+    padding: 5PX;
     border-radius: 10px;
     color: black;
+    font-family: "Love Ya Like A Sister", serif;
     position: absolute;
     top: 100%;
     right: 0;
@@ -227,7 +229,7 @@ main img {
     width: 40px;
     background-color: #f20044;
     position: relative;
-    top: 20%;
+    top: 15%;
    
     transform: rotate(-45deg);
     box-shadow: -10px 10px 90px #f20044;
