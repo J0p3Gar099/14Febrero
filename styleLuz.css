@@ -39,7 +39,7 @@
     z-index: 1;
     backface-visibility: hidden;
     border: solid 5px #fa3b55;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     position: absolute;
     transform: rotateY(-180deg); /* Oculta la parte trasera */
     font-family: "Love Ya Like A Sister", serif;
