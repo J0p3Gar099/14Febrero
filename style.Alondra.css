@@ -24,7 +24,7 @@
     z-index: 2;
     font-family: "Love Ya Like A Sister", serif;
     height: 85%;
-    background-color: #fa3b55;
+    background-color: #483bfa;
     border-radius: 10px;
     transform-origin: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -39,7 +39,7 @@
     z-index: 1;
     backface-visibility: hidden;
     border: solid 5px #fa3b55;
-    
+    font-size: 1.8rem;
     position: absolute;
     transform: rotateY(-180deg); /* Oculta la parte trasera */
     font-family: "Love Ya Like A Sister", serif;
