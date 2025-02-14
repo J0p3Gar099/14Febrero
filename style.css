@@ -19,6 +19,7 @@
     width: 90%;
     border-left: solid 4px black;
     position: absolute;
+    
     backface-visibility: hidden;
     z-index: 2;
     font-family: "Love Ya Like A Sister", serif;
@@ -38,6 +39,7 @@
     z-index: 1;
     backface-visibility: hidden;
     border: solid 5px #fa3b55;
+    
     position: absolute;
     transform: rotateY(-180deg); /* Oculta la parte trasera */
     font-family: "Love Ya Like A Sister", serif;
@@ -233,7 +235,7 @@ main img {
    
     transform: rotate(-45deg);
     box-shadow: -10px 10px 90px #f20044;
-    animation: heart 0.8s linear infinite;
+    animation: heart 0.9s linear infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -308,5 +310,27 @@ main img {
     }
   } */
 
+
+  @media (min-width: 901px) {
+    /* Tus estilos aquí */
+    .contenedor{
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        background-color: rgb(233, 233, 233);
+        display: flex;
+        perspective: 1000px;
+        justify-content: center;
+        padding-top: 20px;
+        align-items: start;
+    }
+    .card, .cardback{
+        width: 30%;
+        height: 90%;
+    }
+    .feliz{
+        left: 35%;
+    }
+  }
 
   
