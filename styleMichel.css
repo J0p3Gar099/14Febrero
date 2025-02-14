@@ -188,7 +188,7 @@ main img {
 
 .titulo{
   
-    font-size: 35px;
+    font-size: 30px;
     position: absolute;
     font-weight: bold;
     
@@ -196,7 +196,7 @@ main img {
    
 }
 .feliz{
-    left: 30%;
+    left: 35%;
     top: -30%;
     color: white;
     
