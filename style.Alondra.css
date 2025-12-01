@@ -9,7 +9,9 @@
     height: 100vh;
     overflow: hidden;
     
-    background-image: url("/Gemini_Generated_Image_pfhkukpfhkukpfhk.png");
+   background-image: url("Gemini_Generated_Image_pfhkukpfhkukpfhk.png");
+
+
     background-repeat:space;
     
     display: flex;
