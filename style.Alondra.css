@@ -8,7 +8,10 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: rgb(233, 233, 233);
+    
+    background-image: url("/Gemini_Generated_Image_pfhkukpfhkukpfhk.png");
+    background-repeat:space;
+    
     display: flex;
     perspective: 1000px;
     justify-content: center;
